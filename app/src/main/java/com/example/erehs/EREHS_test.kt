@@ -33,9 +33,9 @@ class EREHS_test : Fragment() {
         val rb_group3 = view.findViewById<RadioGroup>(R.id.radioGroup3)
         val rb_group4 = view.findViewById<RadioGroup>(R.id.radioGroup4)
         val rb_group5 = view.findViewById<RadioGroup>(R.id.radioGroup5)
-
+        val questions = view.findViewById<TextView>(R.id.textQuestions)
         val tv_question1 = view.findViewById<TextView>(R.id.textView0)
-        val test = view.findViewById<TextView>(R.id.textViewtest)
+        val allscore = view.findViewById<TextView>(R.id.textScore)
         val rb_question2 = view.findViewById<TextView>(R.id.textView20)
         val res_button = view.findViewById<Button>(R.id.resbutton)
         var erefs_total = 0
@@ -89,7 +89,10 @@ class EREHS_test : Fragment() {
                 remove(erefs_questions)
                 commit()
             }
-*/
+*/              questions.setText(erefs_questions.toString())
+                allscore.setText(erefs_total.toString())
+                erefs_questions = 0
+                erefs_total = 0
             }
 
     }

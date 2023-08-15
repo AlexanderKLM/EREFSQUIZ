@@ -6,6 +6,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.view.isVisible
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationBarMenu
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,18 +16,28 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val erefs = EREHS_test()
         val eoehss = EoEHSS()
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
+        setCurrentFragment(erefs)
 
+        bottomNavigationView.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.eref_menu->setCurrentFragment(erefs)
+                R.id.eoehss_menu->setCurrentFragment(eoehss)
+                //R.id.help_menu->setCurrentFragment(thirdFragment)
 
-        val mp_Button: Button = findViewById(R.id.mp_Button)
-        mp_Button.setOnClickListener {
-            supportFragmentManager.beginTransaction().apply {
-                replace(R.id.mp_Main, erefs )
-                addToBackStack(null)
-
-                commit()
             }
+            true
         }
 
-        }
     }
+
+    private fun setCurrentFragment(fragment: Fragment)=
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flFragment,fragment)
+            commit()
+        }
+
+
+}
+
