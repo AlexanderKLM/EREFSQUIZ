@@ -1,0 +1,1087 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/erehs_scroll"
+    tools:context=".EoEHSS">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewE1"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/eozin_vosp_title"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/textViewE2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepen_poraz"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE1" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE2">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonE2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/intraepit_eozin_otsut"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pech_15_x400"
+                android:textAlignment="textStart"
+
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pech_1549_x400"
+                android:textAlignment="textStart"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pech_60_x400"
+                android:textAlignment="textStart"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView101"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/raspr_stadia"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE21">
+
+            <RadioButton
+                android:id="@+id/radioButtonE31"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/giper_baz_otsut"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE32"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/baz_15_30"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE33"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/baz_33_66"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE34"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/baz_66"
+                android:textAlignment="textStart" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewE20"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/baz_sloi_title_2"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+        <TextView
+            android:id="@+id/textViewE21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepen_poraz"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView101">
+
+            <RadioButton
+                android:id="@+id/radioButton21"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/intra_14_x400"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButton22"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/intra_15_33_x400"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButton23"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pech_15_pzr_33_66_x400"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButton24"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pech_15_66_x400"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewE201"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/raspr_stadia"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupE4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE201">
+
+            <RadioButton
+                android:id="@+id/radioButtonE41"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/giper_baz_otsut"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE42"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/baz_giper_33"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE43"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/giper_baz_33_66"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE44"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/baz_giper_66"
+                android:textAlignment="textStart" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewE30"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="@string/eozin_absc_title_3"
+            android:textSize="19sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE4" />
+
+        <TextView
+            android:id="@+id/textViewE31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepen_poraz"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE31">
+
+            <RadioButton
+                android:id="@+id/radioButtonE51"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/scop_eozin_neopr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE52"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/scop_4_5_eozin"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE53"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/scop_10_20_eozin"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE54"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/scop_20_eozin"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewE301"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/raspr_stadia"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE301">
+
+            <RadioButton
+                android:id="@+id/radioButtonE61"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/scop_eozin_neopr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE62"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ea_33"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE63"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ea_33_66"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE64"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ea_66"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewE40"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="@string/eozin_poverh_title_4"
+            android:textSize="19sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE6" />
+
+        <TextView
+            android:id="@+id/textViewE41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepen_poraz"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE41">
+
+            <RadioButton
+                android:id="@+id/radioButtonE71"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pn_otsut"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE72"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pn_3_4"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE73"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pn_5_10"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE74"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pn_10"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewE401"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/raspr_stadia"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE401">
+
+            <RadioButton
+                android:id="@+id/radioButtonE81"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pn_otsut"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE82"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pn_33"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE83"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pn_33_66"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE84"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/pn_66"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/textViewtest"
+            android:layout_width="59dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewE50"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="@string/rashir_mezhklet_title_5"
+            android:textSize="19sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE8" />
+
+        <TextView
+            android:id="@+id/textViewE51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepen_poraz"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE51">
+
+            <RadioButton
+                android:id="@+id/radioButtonE91"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/rmp_neopr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE92"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/rmp_400"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE93"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/rmp_200"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE94"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/rmp_100"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewE501"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/raspr_stadia"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE501">
+
+            <RadioButton
+                android:id="@+id/radioButtonE101"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/rmp_neopr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE102"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/rmp_33"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE103"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/rmp_33_66"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE104"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/rmp_66"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewE60"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="@string/povr_poverhn_epit_title_6"
+            android:textSize="19sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE10" />
+
+        <TextView
+            android:id="@+id/textViewE61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepen_poraz"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE61">
+
+            <RadioButton
+                android:id="@+id/radioButtonE111"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ppe_neopr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE112"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ppe_bez_eozon"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE113"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ppe_s_lybum_kolich_epit"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE114"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/slyschivan_povr_poverhn_epit"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewE601"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/raspr_stadia"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE601">
+
+            <RadioButton
+                android:id="@+id/radioButtonE121"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ppe_neopr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE122"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ppe_33"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE123"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ppe_33_66"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE124"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/ppe_66"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewE70"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="@string/diskeratoz_title_7"
+            android:textSize="19sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE12" />
+
+        <TextView
+            android:id="@+id/textViewE71"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepen_poraz"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE70"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE71">
+
+            <RadioButton
+                android:id="@+id/radioButtonE131"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/disker_ne_opr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE132"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/kletk_disker_x400"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE133"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/kletk_disker_2_5_x400"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE134"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/kletk_disker_5_400"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewE701"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/raspr_stadia"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE701">
+
+            <RadioButton
+                android:id="@+id/radioButtonE141"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/disker_ne_opr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE142"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/disker_33"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE143"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/disker_33_66"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE144"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/disker_66"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewE80"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="@string/fibroz_sobstv_plastink_title_7"
+            android:textSize="19sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE14" />
+
+        <TextView
+            android:id="@+id/textViewE81"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepen_poraz"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE80"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE81">
+
+            <RadioButton
+                android:id="@+id/radioButtonE151"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/fsp_neopr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE152"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/volokna_sceplen_drug_s_drug"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE153"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/diametr_volokn_raven_diametr_baz_sloy"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE154"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/diametr_volokn_bolshe_baz_sloy"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewE801"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/raspr_stadia"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupE16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewE801">
+
+            <RadioButton
+                android:id="@+id/radioButtonE161"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/fsp_neopr"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE162"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/fsp_33"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonE163"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/fsp_33_66"
+                android:textAlignment="textStart" />
+            <RadioButton
+                android:id="@+id/radioButtonE164"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/fsp_66"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

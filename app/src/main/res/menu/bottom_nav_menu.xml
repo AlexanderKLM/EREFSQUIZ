@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/eref_menu"
+        android:title="EREFS"
+        android:icon="@drawable/ic_launcher_background"/>
+    <item
+        android:id="@+id/eoehss_menu"
+        android:title="EoEHSS"
+        android:icon="@drawable/ic_launcher_background"/>
+    <item
+        android:id="@+id/help_menu"
+        android:title="Справка"
+        android:icon="@drawable/ic_launcher_background"/>
+
+</menu>
