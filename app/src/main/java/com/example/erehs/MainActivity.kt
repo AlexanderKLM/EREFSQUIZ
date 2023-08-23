@@ -2,14 +2,8 @@ package com.example.erehs
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import android.widget.TextView
-import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import com.example.erehs.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationBarMenu
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         val erefs = EREHS_test()
         val eoehss = EoEHSS()
         val help = Guide()
+        val ie = ISEE()
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         setCurrentFragment(erefs)
 
@@ -27,6 +22,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.eref_menu->setCurrentFragment(erefs)
                 R.id.eoehss_menu->setCurrentFragment(eoehss)
                 R.id.help_menu->setCurrentFragment(help)
+                R.id.ie_menu->setCurrentFragment(ie)
 
             }
             true

@@ -1,0 +1,362 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/eoehs_scroll"
+    tools:context=".EoEHSS">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewI1"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="Симптомы и осложнения"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/textViewI2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Симптомы"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroupI1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewI1" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupI1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewI2">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonI11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Еженедельно"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonI12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Ежедневно"
+                android:textAlignment="textStart"
+
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioButton
+                android:id="@+id/radioButtonI13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Несколько раз в день или проблемы с социализацией"
+                android:textAlignment="textStart"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewI101"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Осложнения"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupI1" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupI3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewI21">
+
+            <RadioButton
+                android:id="@+id/radioButtonI31"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Локализованная"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonI32"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Диффузная"
+                android:textAlignment="textStart" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewI20"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="2. Особенности воспаления"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupI2" />
+
+        <TextView
+            android:id="@+id/textViewI21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Эндоскопическая картина (отек, борозды и/или экссудаты)"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewI20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroupI2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewI101">
+
+            <RadioButton
+                android:id="@+id/radioButtonI21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Вклинение  пищи, потребовавшее обращения за неотложной помощью или эндоскопии (для пациентов ≥18 лет)"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonI22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/osl_2"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonI23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="@string/perf_pish"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewI201"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Гистологическая картина"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupI3" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupI4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewI201">
+
+            <RadioButton
+                android:id="@+id/radioButtonI41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="15–60 эозинофилов в поле зрения"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonI42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text=">60 эозинофилов в поле зрения"
+                android:textAlignment="textStart" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewI30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3. Фибростенотические особенности"
+            android:textSize="19sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupI4" />
+
+        <TextView
+            android:id="@+id/textViewI31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Эндоскопическая картина (кольца, стриктуры)"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewI30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupI5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewI31">
+
+            <RadioButton
+                android:id="@+id/radioButtonI51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Изменения присутствуют, но эндоскоп проходит свободно"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonI52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Изменения присутствуют, требуют дилатации или отмечается  плотное прилегание при прохождении стандартного эндоскопа"
+                android:textAlignment="textStart" />
+
+            <RadioButton
+                android:id="@+id/radioButtonI53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Не возможно выполнить стандартную верхнюю эндоскопию; повторные расширения (у взрослых ≥18 лет); или любая дилатация (у детей младше 18 лет)"
+                android:textAlignment="textStart" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewI301"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Гистологическая картина"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupI5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupI6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewI301">
+
+            <RadioButton
+                android:id="@+id/radioButtonI61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layoutDirection="rtl"
+                android:text="Гиперплазия базальной зоны или фиброз собственной пластинки (или дискератозные эпителиальные клетки/изменение поверхностного эпителия, если нет собственной пластинки)"
+                android:textAlignment="textStart" />
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/buttonI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/get_res_rus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupI6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/buttonIClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:text="Очистить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonI"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupI6"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

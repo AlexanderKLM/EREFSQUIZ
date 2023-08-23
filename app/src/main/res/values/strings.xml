@@ -83,4 +83,6 @@
     <string name="strictures_title_5">5. Strictures / Стриктуры</string>
     <string name="to_eoehss">Перейти к тесту EoEHSS</string>
     <string name="get_res_rus">Получить результат</string>
+    <string name="osl_2"><![CDATA[*Вклинение пищи, потребовавшее обращения за неотложной помощью или эндоскопии (для пациентов <18 лет) *Госпитализация по причине ЭоЭ]]></string>
+    <string name="perf_pish"><![CDATA[*Перфорация пищевода *Мальнутриция с массой тела <5-го процентиля или снижением траектории роста]]></string>
 </resources>
