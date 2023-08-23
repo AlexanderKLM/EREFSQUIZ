@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/erehs_scroll"
+    android:id="@+id/eoehs_scroll"
     tools:context=".EoEHSS">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,13 +29,13 @@
             android:layout_height="wrap_content"
             android:text="@string/stepen_poraz"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroupE1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewE1" />
 
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/radioGroupE1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -46,7 +46,7 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonE2"
+                android:id="@+id/radioButtonE01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -55,7 +55,7 @@
                 android:textAlignment="textStart" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/radioButtonE02"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -66,7 +66,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/radioButtonE03"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -78,7 +78,7 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <RadioButton
-                android:id="@+id/radioButton5"
+                android:id="@+id/radioButtonE04"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -101,10 +101,10 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE1" />
 
         <RadioGroup
-            android:id="@+id/radioGroup3"
+            android:id="@+id/radioGroupE3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -162,7 +162,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE2" />
 
         <TextView
             android:id="@+id/textViewE21"
@@ -176,7 +176,7 @@
              />
 
         <RadioGroup
-            android:id="@+id/radioGroup2"
+            android:id="@+id/radioGroupE2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -187,7 +187,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView101">
 
             <RadioButton
-                android:id="@+id/radioButton21"
+                android:id="@+id/radioButtonE21"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="start"
@@ -196,7 +196,7 @@
                 android:textAlignment="textStart" />
 
             <RadioButton
-                android:id="@+id/radioButton22"
+                android:id="@+id/radioButtonE22"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="start"
@@ -205,7 +205,7 @@
                 android:textAlignment="textStart" />
 
             <RadioButton
-                android:id="@+id/radioButton23"
+                android:id="@+id/radioButtonE23"
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
                 android:layout_gravity="start"
@@ -214,7 +214,7 @@
                 android:textAlignment="textStart" />
 
             <RadioButton
-                android:id="@+id/radioButton24"
+                android:id="@+id/radioButtonE24"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_gravity="start"
@@ -234,7 +234,7 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE3" />
 
         <RadioGroup
             android:id="@+id/radioGroupE4"
@@ -545,17 +545,6 @@
         </RadioGroup>
 
 
-
-        <TextView
-            android:id="@+id/textViewtest"
-            android:layout_width="59dp"
-            android:layout_height="31dp"
-            android:layout_marginTop="4dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.045"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
@@ -956,7 +945,7 @@
             android:layout_width="wrap_content"
             android:layout_height="46dp"
             android:gravity="center"
-            android:text="@string/fibroz_sobstv_plastink_title_7"
+            android:text="@string/fibroz_sobstv_plastink_title_8"
             android:textSize="19sp"
             android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -1081,6 +1070,18 @@
 
         </RadioGroup>
 
+        <Button
+            android:id="@+id/buttonEOE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_res_rus"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupE16" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

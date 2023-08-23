@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/erefs_scroll"
+    tools:context=".EREHS_test">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textViewH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Справка"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="EoEHSS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewH1" />
+
+        <TextView
+            android:id="@+id/textViewEOT1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="1. Эозинофильное воспаление"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewH2" />
+
+        <TextView
+            android:id="@+id/textViewEO1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:text="В норме в биоптатах пищевода интраэпителиальные эозинофилы отсутствуют, поэтому наличие любого количества интраэпителиальных эозинофилов рассматривается как патологическое изменение. Балльная шкала эозинофильного воспаления основана на количестве эозинофилов в одном поле зрения при большом увеличении (ПЗР, х400) - пиковое эозинофильное число (ПЭЧ) при оценке участка с наиболее выраженными воспалительными изменениями."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEOT1" />
+
+        <TextView
+            android:id="@+id/textViewEOT2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="2. Базальный слой плоского эпителия пищевода"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEO1" />
+
+        <TextView
+            android:id="@+id/textViewEO2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:text="Базальный слой плоского эпителия пищевода состоит из тесно - расположенных мелких клеток, в норме его толщина составляет меньше 15% общей толщины эпителия. Верхняя граница базального слоя определяется как уровень, на котором ядра базальных клеток отделены друг от друга расстоянием равным или превышающим диаметр ядра базальной клетки."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEOT2" />
+
+        <TextView
+            android:id="@+id/textViewEOT3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="3. Эозинофильные абсцессы ЭА"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEO2" />
+
+        <TextView
+            android:id="@+id/textViewEO3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:text="Эозинофильные абсцессы — интраэпителиальные скопления или агрегаты эозинофилов, в которых клетки образуют солидные структуры. Эпителиальная архитектоника нарушена таким образом, что соседние эозинофилы не разделены эпителиальной тканью."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEOT3" />
+
+        <TextView
+            android:id="@+id/textViewEOT4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="4. Эозинофильное поверхностное наслоение «пластообразование»"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEO3" />
+
+        <TextView
+            android:id="@+id/textViewEO4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:text="Бальная шкала для поверхностного наслоения (ПН) основывалась на количестве эозинофилов, формирующих слой. Эозинофильное поверхностное наслоение («пластообразование») линейное распределение (расположение) как минимум трех эозинофилов в верхней трети многослойного эпителия слизистой оболочки пищевода параллельно поверхности."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEOT4" />
+
+        <TextView
+            android:id="@+id/textViewEOT5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="@string/rashir_mezhklet_title_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEO4" />
+
+        <TextView
+            android:id="@+id/textViewEO5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:text="Расширенные межклеточные пространства - округлые перицеллюлярные пространства в плоском эпителии пищевода, в которых определяются межклеточные мостики. Балльная шкала РМП основана на степени увеличения микроскопа, необходимой для обнаружения межклеточных мостиков."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEOT5" />
+
+        <TextView
+            android:id="@+id/textViewEOT6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="6. Повреждение поверхностного эпителия (ППЭ)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEO5" />
+
+        <TextView
+            android:id="@+id/textViewEO6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:text="Повреждение поверхностного эпителия (ППЭ): изменения тинкториальных свойств поверхностного эпителия, проявляющиеся усилением (более темный оттенок красного) окрашивания клеток поверхностного слоя эпителия при наличии или отсутствии эозинофильной инфильтрации. Балльная шкала ППЭ основана на выраженности эозинофильной инфильтрации в поврежденном поверхностном эпителии."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEOT6" />
+
+        <TextView
+            android:id="@+id/textViewEOT7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="7. Дискератоз"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEO6" />
+
+        <TextView
+            android:id="@+id/textViewEO7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:text="Дискератоз-появление отдельных эпителиальных клеток с ярко-эозинофильной цитоплазмой и мелким округлым гиперхромным ядром. Балльная шкала основана на количестве клеток с явлениями дискератоза."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEOT7" />
+
+        <TextView
+            android:id="@+id/textViewEOT8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="8. Фиброз собственной пластинки слизистой оболочки (ФСП)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEO7" />
+
+        <TextView
+            android:id="@+id/textViewEO8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:text="Фиброз собственной пластинки слизистой оболочки (ФСП): утолщение соединительнотканных волокон собственной пластинки слизистой оболочки. Волокна собственной пластинки, расположенные по одиночке и имеющие диаметр менее размера ядер клеток базального слоя, рассматривались как нормальные; сцепленные друг с другом волокна обычного диаметра, а также волокна, имеющие диаметр равный или превышающий размер ядер клеток базального слоя, рассматривались как патологичные. Балльная шкала ФСП основана на степени утолщения волокон."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEOT8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
