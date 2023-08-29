@@ -1,0 +1,337 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textViewGEREFT1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тест ERERFS"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewGEREFST1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewGEREFST1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Общее"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFT1" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD1"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:text="В тесте EREFS, ответ в любом блоке Степень 0."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFST1" />
+        <ImageView
+            android:id="@+id/imageViewGEREF1"
+            android:layout_width="168dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD1"
+            app:srcCompat="@drawable/erefs___6" />
+
+        <TextView
+            android:id="@+id/textViewGEREFST2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Эксудаты"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF1"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Схема Эксудат"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFST2"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF20"
+            android:layout_width="120dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD2"
+            app:srcCompat="@drawable/erefs__e_" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Степень 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF20"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF21"
+            android:layout_width="248dp"
+            android:layout_height="223dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD21"
+            app:srcCompat="@drawable/erefs___9" />
+
+        <TextView
+            android:id="@+id/textViewGEREFST3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Концентрические сужения (кольца)"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF21"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Схема колец"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFST3"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF30"
+            android:layout_width="276dp"
+            android:layout_height="272dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD3"
+            app:srcCompat="@drawable/erefs__r_" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Степень 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF30"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewEREF31"
+            android:layout_width="245dp"
+            android:layout_height="283dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD31"
+            app:srcCompat="@drawable/erefs___5" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Степень 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewEREF31"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD32"
+            app:srcCompat="@drawable/erefs___2" />
+
+        <TextView
+            android:id="@+id/textViewGEREFST4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отёк"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF32"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Схема"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFST4"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/erefs___"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD4"
+            tools:layout_editor_absoluteY="1123dp" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Степень 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF40"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD41"
+            app:srcCompat="@drawable/erefs___6" />
+
+        <TextView
+            android:id="@+id/textViewGEREFST5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Борозды"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF41"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Схема"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFST5"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD5"
+            app:srcCompat="@drawable/erefs__f_" />
+
+
+        <TextView
+            android:id="@+id/textViewGEREFD51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Степень 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF50"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD51"
+            app:srcCompat="@drawable/erefs___1" />
+
+
+        <TextView
+            android:id="@+id/textViewGEREFST6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стриктуры"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF51"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Схема"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFST6"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD6"
+            app:srcCompat="@drawable/erefs__s_" />
+
+        <TextView
+            android:id="@+id/textViewGEREFD61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Степень 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF60"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF61"
+            android:layout_width="405dp"
+            android:layout_height="547dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGEREFD61"
+            app:srcCompat="@drawable/erefs___7" />
+
+        <ImageView
+            android:id="@+id/imageViewGEREF62"
+            android:layout_width="379dp"
+            android:layout_height="365dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGEREF61"
+            app:srcCompat="@drawable/erefs___8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

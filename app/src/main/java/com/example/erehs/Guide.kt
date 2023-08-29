@@ -11,7 +11,7 @@ class Guide: Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.guide, container, false)
+        return inflater.inflate(R.layout.guideeoehss, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
