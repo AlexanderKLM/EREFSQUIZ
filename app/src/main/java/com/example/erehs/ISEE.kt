@@ -103,7 +103,7 @@ class ISEE: Fragment() {
             if (erefs_total < 5 && erefs_total > 1) {
                 builder.setMessage("Результат исследования I-SEE, набрано: $erefs_total балла")
             }
-            if (erefs_total > 5 || erefs_total==0){
+            if (erefs_total > 4 || erefs_total==0){
                 builder.setMessage("Результат исследования I-SEE, набрано: $erefs_total баллов")
             }
             // Set Alert Title
