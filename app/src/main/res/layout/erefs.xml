@@ -14,10 +14,11 @@
         <TextView
             android:id="@+id/textView0"
             android:layout_width="wrap_content"
-            android:layout_height="38dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/exudates_title_1"
-            android:textSize="20sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen0_no_priznak"
                 android:textAlignment="textStart" />
 
@@ -51,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen1_legkaya_bel_nal_menshe_10"
                 android:textAlignment="textStart"
 
@@ -62,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen2_tyazhelaya_bel_nal_bolshe_10"
                 android:textAlignment="textStart"
                 app:layout_constrainedWidth="true"
@@ -72,12 +76,15 @@
 
         <TextView
             android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="46dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
             android:gravity="center"
             android:text="@string/rings_title_2"
-            android:textSize="19sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
@@ -96,18 +103,20 @@
             <RadioButton
                 android:id="@+id/radioButton31"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen0_priznak_otsut_vaskulyar"
                 android:textAlignment="textStart" />
 
             <RadioButton
                 android:id="@+id/radioButton32"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen1_otek_otsut_vizual"
                 android:textAlignment="textStart" />
 
@@ -117,11 +126,12 @@
         <TextView
             android:id="@+id/textView30"
             android:layout_width="wrap_content"
-            android:layout_height="46dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:gravity="center"
             android:text="@string/edema_title_3"
-            android:textSize="19sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
@@ -141,36 +151,40 @@
             <RadioButton
                 android:id="@+id/radioButton21"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
                 android:text="@string/stepen0_no_priznak"
-                android:textAlignment="textStart" />
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/radioButton22"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen1_light_tonkie_grebni"
                 android:textAlignment="textStart" />
 
             <RadioButton
                 android:id="@+id/radioButton23"
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen2_umeren_kolca"
                 android:textAlignment="textStart" />
 
             <RadioButton
                 android:id="@+id/radioButton24"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen3_tyazhel_kolca"
                 android:textAlignment="textStart" />
 
@@ -179,11 +193,12 @@
         <TextView
             android:id="@+id/textView40"
             android:layout_width="wrap_content"
-            android:layout_height="46dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:gravity="center"
             android:text="@string/furrows_title_4"
-            android:textSize="19sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
@@ -202,18 +217,20 @@
             <RadioButton
                 android:id="@+id/radioButton41"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen0_no_priznak"
                 android:textAlignment="textStart" />
 
             <RadioButton
                 android:id="@+id/radioButton42"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen1_priznak_prisut"
                 android:textAlignment="textStart" />
 
@@ -223,11 +240,12 @@
         <TextView
             android:id="@+id/textView50"
             android:layout_width="wrap_content"
-            android:layout_height="46dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:gravity="center"
             android:text="@string/strictures_title_5"
-            android:textSize="19sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
@@ -246,18 +264,20 @@
             <RadioButton
                 android:id="@+id/radioButton51"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen0_no_priznak"
                 android:textAlignment="textStart" />
 
             <RadioButton
                 android:id="@+id/radioButton52"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layoutDirection="rtl"
+                android:textSize="16sp"
                 android:text="@string/stepen1_priznak_prisut"
                 android:textAlignment="textStart" />
 
@@ -273,7 +293,20 @@
             android:text="@string/get_res_rus"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toEndOf="@+id/buttonERClear"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/buttonERClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:text="Очистить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/resbutton"
+            app:layout_constraintHorizontal_bias="0.079"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup5"
             app:layout_constraintVertical_bias="0.0" />

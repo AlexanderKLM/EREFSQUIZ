@@ -44,7 +44,7 @@ class EoEHSS: Fragment() {
         val rb_groupE14 = view.findViewById<RadioGroup>(R.id.radioGroupE14)
         val rb_groupE15 = view.findViewById<RadioGroup>(R.id.radioGroupE15)
         val rb_groupE16 = view.findViewById<RadioGroup>(R.id.radioGroupE16)
-
+        val clearEoE = view.findViewById<Button>(R.id.buttonEoEClear)
         val res_buttonE = view.findViewById<Button>(R.id.buttonEOE)
         var erefs_totalSTEPEN: Double = 0.0
         var erefs_questionsSTEPEN: Double = 0.0
@@ -142,6 +142,30 @@ class EoEHSS: Fragment() {
 
 
                 }
+        clearEoE.setOnClickListener(){
+            rb_groupE1.clearCheck()
+            rb_groupE2.clearCheck()
+            rb_groupE3.clearCheck()
+            rb_groupE4.clearCheck()
+            rb_groupE5.clearCheck()
+            rb_groupE6.clearCheck()
+            rb_groupE7.clearCheck()
+            rb_groupE8.clearCheck()
+            rb_groupE9.clearCheck()
+            rb_groupE10.clearCheck()
+            rb_groupE11.clearCheck()
+            rb_groupE12.clearCheck()
+            rb_groupE13.clearCheck()
+            rb_groupE14.clearCheck()
+            rb_groupE15.clearCheck()
+            rb_groupE16.clearCheck()
+            erefs_totalSTEPEN = 0.0
+            erefs_questionsSTEPEN = 0.0
+            total_STEPEN = 0.0
+            erefs_totalRASP = 0.0
+            erefs_questionsRASP = 0.0
+            total_RASP = 0.0
+        }
 
             }
 }

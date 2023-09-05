@@ -37,6 +37,7 @@ class EREHS_test : Fragment() {
         val tv_question1 = view.findViewById<TextView>(R.id.textView0)
         val rb_question2 = view.findViewById<TextView>(R.id.textView20)
         val res_button = view.findViewById<Button>(R.id.resbutton)
+        val clearEref = view.findViewById<Button>(R.id.buttonERClear)
         var erefs_total = 0
         var erefs_questions = 0
 
@@ -88,32 +89,25 @@ class EREHS_test : Fragment() {
 
             val builder = AlertDialog.Builder(requireContext())
 
-            // Set the message show for the Alert time
             if (erefs_total==1){
                 builder.setMessage("Результат исследования EREFS, набран : $erefs_total балл")
             }
             if (erefs_total< 5 && erefs_total > 1){
             builder.setMessage("Результат исследования EREFS, набрано: $erefs_total балла")
-            } else {
+            }
+            if (erefs_total > 5 || erefs_total==0){
                 builder.setMessage("Результат исследования EREFS, набрано: $erefs_total баллов")
             }
-            // Set Alert Title
-            builder.setTitle("Результат")
 
-            // Set Cancelable false for when the user clicks on the outside the Dialog Box then it will remain show
+            builder.setTitle("Результат")
             builder.setCancelable(false)
 
-            // Set the positive button with yes name Lambda OnClickListener method is use of DialogInterface interface.
 
-            // Set the Negative button with No name Lambda OnClickListener method is use of DialogInterface interface.
             builder.setNegativeButton("OK") {
-                // If user click no then dialog box is canceled.
                     dialog, which -> dialog.cancel()
             }
 
-            // Create the Alert dialog
             val alertDialog = builder.create()
-            // Show the Alert Dialog box
             alertDialog.show()
 
 
@@ -121,6 +115,15 @@ class EREHS_test : Fragment() {
             erefs_total = 0
 
             }
+        clearEref.setOnClickListener(){
+            rb_group1.clearCheck()
+            rb_group2.clearCheck()
+            rb_group3.clearCheck()
+            rb_group4.clearCheck()
+            rb_group5.clearCheck()
+            erefs_questions = 0
+            erefs_total = 0
+        }
 
     }
 

@@ -27,19 +27,34 @@ class Guide: Fragment() {
        // setCurrentFragment(eoeh)
         Beref.setOnClickListener() {
             setCurrentFragment(eref)
+            Beref.isEnabled = false
+            if (Beoeh.isEnabled == false || Bsee.isEnabled == false ){
+                Beoeh.isEnabled = true
+                Bsee.isEnabled = true
+            }
         }
         Beoeh.setOnClickListener() {
             setCurrentFragment(eoeh)
+            Beoeh.isEnabled = false
+            if (Beref.isEnabled == false || Bsee.isEnabled == false ){
+                Beref.isEnabled = true
+                Bsee.isEnabled = true
+            }
         }
         Bsee.setOnClickListener() {
             setCurrentFragment(isee)
+            Bsee.isEnabled = false
+            if (Beoeh.isEnabled == false || Beref.isEnabled == false ){
+                Beoeh.isEnabled = true
+                Beref.isEnabled = true
+            }
+
         }
 
     }
     fun setCurrentFragment(fragment: Fragment)=
         activity?.supportFragmentManager?.beginTransaction()?.apply {
             replace(R.id.frameLayoutG, fragment)
-            addToBackStack(null)
             commit()
         }
 
