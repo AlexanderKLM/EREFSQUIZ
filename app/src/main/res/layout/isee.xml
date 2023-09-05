@@ -18,6 +18,7 @@
             android:text="1. Симптомы и осложнения"
             android:textStyle="bold"
             android:textSize="22sp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
