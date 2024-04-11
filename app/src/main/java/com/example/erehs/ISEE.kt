@@ -30,6 +30,7 @@ class ISEE: Fragment() {
         var erefs_total = 0
         var erefs_questions = 0
 
+        // Объявление групп кнопок, а также вычисление баллов за тест
         res.setOnClickListener() {
             if (rb_groupI1.checkedRadioButtonId != -1) {
                 erefs_questions += 1
@@ -96,7 +97,7 @@ class ISEE: Fragment() {
 
             val builder = AlertDialog.Builder(requireContext())
 
-            // Set the message show for the Alert time
+            //Вывод текста в зависимости от итогового числа
             if (erefs_total == 1) {
                 builder.setMessage("Результат исследования I-SEE, набран : $erefs_total балл")
             }
@@ -106,32 +107,25 @@ class ISEE: Fragment() {
             if (erefs_total > 4 || erefs_total==0){
                 builder.setMessage("Результат исследования I-SEE, набрано: $erefs_total баллов")
             }
-            // Set Alert Title
+            // Название Alert Box
             builder.setTitle("Результат")
 
-            // Set Cancelable false for when the user clicks on the outside the Dialog Box then it will remain show
+            // Alert Box не будет закрываться если пользователь будет нажимать за границами Alert Box
             builder.setCancelable(false)
-
-            // Set the positive button with yes name Lambda OnClickListener method is use of DialogInterface interface.
-
-            // Set the Negative button with No name Lambda OnClickListener method is use of DialogInterface interface.
             builder.setNegativeButton("OK") {
-                // If user click no then dialog box is canceled.
                     dialog, which ->
                 dialog.cancel()
             }
 
-            // Create the Alert dialog
+            // Вывод результата в Alert Box
             val alertDialog = builder.create()
-            // Show the Alert Dialog box
             alertDialog.show()
-
-
             erefs_questions = 0
             erefs_total = 0
 
 
         }
+        // Кнопка очистки выбора
         clear.setOnClickListener() {
             rb_groupI1.clearCheck()
             rb_groupI2.clearCheck()

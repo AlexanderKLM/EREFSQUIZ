@@ -16,11 +16,6 @@
         android:enabled="true"
         android:title="I-SEE"
         android:icon="@drawable/check_menu_icon"/>
-    <item
-        android:id="@+id/help_menu"
-        android:enabled="true"
-        android:title="Справка"
-        android:icon="@drawable/guide3_android_menu"/>
 
 </menu>
 

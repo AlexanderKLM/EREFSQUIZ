@@ -24,25 +24,18 @@ class EREHS_test : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val score = Guide()
-        val main = MainActivity()
-        val rb_question11 = view.findViewById<RadioButton>(R.id.radioButton2)
-        val rb_question12 = view.findViewById<RadioButton>(R.id.radioButton3)
-        val rb_question13 = view.findViewById<RadioButton>(R.id.radioButton4)
         val rb_group1 = view.findViewById<RadioGroup>(R.id.radioGroup)
         val rb_group2 = view.findViewById<RadioGroup>(R.id.radioGroup2)
         val rb_group3 = view.findViewById<RadioGroup>(R.id.radioGroup3)
         val rb_group4 = view.findViewById<RadioGroup>(R.id.radioGroup4)
         val rb_group5 = view.findViewById<RadioGroup>(R.id.radioGroup5)
-        val tv_question1 = view.findViewById<TextView>(R.id.textView0)
-        val rb_question2 = view.findViewById<TextView>(R.id.textView20)
         val res_button = view.findViewById<Button>(R.id.resbutton)
         val clearEref = view.findViewById<Button>(R.id.buttonERClear)
         var erefs_total = 0
         var erefs_questions = 0
 
 
-
+        // Объявление групп кнопок, а также вычисление баллов за тест
         res_button.setOnClickListener() {
             if (rb_group1.checkedRadioButtonId != -1) {
                 erefs_questions += 1
@@ -88,7 +81,7 @@ class EREHS_test : Fragment() {
 
 
             val builder = AlertDialog.Builder(requireContext())
-
+            // Вывод текста в зависимости от итогового числа
             if (erefs_total==1){
                 builder.setMessage("Результат исследования EREFS, набран : $erefs_total балл")
             }
@@ -99,22 +92,23 @@ class EREHS_test : Fragment() {
                 builder.setMessage("Результат исследования EREFS, набрано: $erefs_total баллов")
             }
 
+            // Название Alert Box
             builder.setTitle("Результат")
+
+            // Alert Box не будет закрываться если пользователь будет нажимать за границами Alert Box
             builder.setCancelable(false)
-
-
             builder.setNegativeButton("OK") {
                     dialog, which -> dialog.cancel()
             }
 
+            // Вывод результата в Alert Box
             val alertDialog = builder.create()
             alertDialog.show()
-
-
             erefs_questions = 0
             erefs_total = 0
-
             }
+
+        // Кнопка очистки выбора
         clearEref.setOnClickListener(){
             rb_group1.clearCheck()
             rb_group2.clearCheck()

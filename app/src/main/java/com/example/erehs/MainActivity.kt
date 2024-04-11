@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val erefs = EREHS_test()
         val eoehss = EoEHSS()
-        val help = Guide()
         val ie = ISEE()
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         setCurrentFragment(erefs)
@@ -21,7 +20,6 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.eref_menu->setCurrentFragment(erefs)
                 R.id.eoehss_menu->setCurrentFragment(eoehss)
-                R.id.help_menu->setCurrentFragment(help)
                 R.id.ie_menu->setCurrentFragment(ie)
 
             }

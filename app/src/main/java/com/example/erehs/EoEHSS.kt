@@ -26,8 +26,6 @@ class EoEHSS: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val score = Guide()
-        val main = MainActivity()
         val rb_groupE1 = view.findViewById<RadioGroup>(R.id.radioGroupE1)
         val rb_groupE2 = view.findViewById<RadioGroup>(R.id.radioGroupE2)
         val rb_groupE3 = view.findViewById<RadioGroup>(R.id.radioGroupE3)
@@ -53,6 +51,7 @@ class EoEHSS: Fragment() {
         var erefs_questionsRASP: Double = 0.0
         var total_RASP: Double = 0.0
 
+        //Вычисление степени поражения
         fun checkRadioButtonSTEPEN(radioGroup: RadioGroup, @IdRes rb2: Int, @IdRes rb3: Int, @IdRes rb4: Int) {
             if (radioGroup.checkedRadioButtonId != -1) {
                 erefs_questionsSTEPEN += 1
@@ -65,12 +64,13 @@ class EoEHSS: Fragment() {
                 if (radioGroup.checkedRadioButtonId == rb4) {
                     erefs_totalSTEPEN += 3
                 }
-                total_STEPEN = (erefs_questionsSTEPEN * 3) / erefs_totalSTEPEN
+                total_STEPEN = erefs_totalSTEPEN / (erefs_questionsSTEPEN * 3)
                 if (total_STEPEN == Double.POSITIVE_INFINITY){
                     total_STEPEN = 0.0
                 }
             }
         }
+        //Вычисление распространенности
         fun checkRadioButtonRASP(radioGroup: RadioGroup, @IdRes rb2: Int, @IdRes rb3: Int, @IdRes rb4: Int) {
             if (radioGroup.checkedRadioButtonId != -1) {
                 erefs_questionsRASP += 1
@@ -83,14 +83,14 @@ class EoEHSS: Fragment() {
                 if (radioGroup.checkedRadioButtonId == rb4) {
                     erefs_totalRASP += 3
                 }
-                total_RASP = (erefs_questionsRASP * 3) / erefs_totalRASP
+                total_RASP = erefs_totalRASP / (erefs_questionsRASP * 3)
                 if (total_RASP == Double.POSITIVE_INFINITY){
                     total_RASP = 0.0
                 }
             }
         }
 
-
+                //Объявления групп кнопок и какие кнопки входят в эти группы
                 res_buttonE.setOnClickListener() {
                     checkRadioButtonSTEPEN(rb_groupE1, R.id.radioButtonE02, R.id.radioButtonE03, R.id.radioButtonE04)
                     checkRadioButtonRASP(rb_groupE2, R.id.radioButtonE22, R.id.radioButtonE23, R.id.radioButtonE24)
@@ -111,27 +111,19 @@ class EoEHSS: Fragment() {
 
                     val builder = AlertDialog.Builder(requireContext())
 
-
-                    builder.setMessage("Степень поражения: $total_STEPEN, Распространенность (стадия): $total_RASP" )
-
-                    // Set Alert Title
+                    // Название Alert Box
                     builder.setTitle("Результат исследования EoEHSS:")
-
-                    // Set Cancelable false for when the user clicks on the outside the Dialog Box then it will remain show
+                    //Вывод переменных в Alert box
+                    builder.setMessage("Степень поражения: $total_STEPEN, Распространенность (стадия): $total_RASP" )
+                    // Alert Box не будет закрываться если пользователь будет нажимать за границами Alert Box
                     builder.setCancelable(false)
-
-                    // Set the positive button with yes name Lambda OnClickListener method is use of DialogInterface interface.
-
-                    // Set the Negative button with No name Lambda OnClickListener method is use of DialogInterface interface.
                     builder.setNegativeButton("OK") {
-                        // If user click no then dialog box is canceled.
                             dialog, which ->
                         dialog.cancel()
                     }
 
-                    // Create the Alert dialog
+                    // Вывод результата в Alert Box
                     val alertDialog = builder.create()
-                    // Show the Alert Dialog box
                     alertDialog.show()
                     erefs_questionsSTEPEN = 0.0
                     erefs_totalSTEPEN = 0.0
@@ -139,33 +131,32 @@ class EoEHSS: Fragment() {
                     erefs_questionsRASP = 0.0
                     erefs_totalRASP = 0.0
                     total_RASP = 0.0
-
-
                 }
-        clearEoE.setOnClickListener(){
-            rb_groupE1.clearCheck()
-            rb_groupE2.clearCheck()
-            rb_groupE3.clearCheck()
-            rb_groupE4.clearCheck()
-            rb_groupE5.clearCheck()
-            rb_groupE6.clearCheck()
-            rb_groupE7.clearCheck()
-            rb_groupE8.clearCheck()
-            rb_groupE9.clearCheck()
-            rb_groupE10.clearCheck()
-            rb_groupE11.clearCheck()
-            rb_groupE12.clearCheck()
-            rb_groupE13.clearCheck()
-            rb_groupE14.clearCheck()
-            rb_groupE15.clearCheck()
-            rb_groupE16.clearCheck()
-            erefs_totalSTEPEN = 0.0
-            erefs_questionsSTEPEN = 0.0
-            total_STEPEN = 0.0
-            erefs_totalRASP = 0.0
-            erefs_questionsRASP = 0.0
-            total_RASP = 0.0
-        }
+                //Кнопка очистки выбора
+                clearEoE.setOnClickListener(){
+                    rb_groupE1.clearCheck()
+                    rb_groupE2.clearCheck()
+                    rb_groupE3.clearCheck()
+                    rb_groupE4.clearCheck()
+                    rb_groupE5.clearCheck()
+                    rb_groupE6.clearCheck()
+                    rb_groupE7.clearCheck()
+                    rb_groupE8.clearCheck()
+                    rb_groupE9.clearCheck()
+                    rb_groupE10.clearCheck()
+                    rb_groupE11.clearCheck()
+                    rb_groupE12.clearCheck()
+                    rb_groupE13.clearCheck()
+                    rb_groupE14.clearCheck()
+                    rb_groupE15.clearCheck()
+                    rb_groupE16.clearCheck()
+                    erefs_totalSTEPEN = 0.0
+                    erefs_questionsSTEPEN = 0.0
+                    total_STEPEN = 0.0
+                    erefs_totalRASP = 0.0
+                    erefs_questionsRASP = 0.0
+                    total_RASP = 0.0
+                }
 
             }
 }
